@@ -1,0 +1,1540 @@
+{
+  "activities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "activity_executions": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_activity_id": {
+          "bsonType": "objectId"
+        },
+        "has_arrangement_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "next_activity_execution_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_activity_id"
+      ]
+    }
+  },
+  "apperance_occlusion_models": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_glasses": {
+          "bsonType": "bool"
+        },
+        "has_beard_value_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "has_moustache_value_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "channels": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "constant_length_epoch_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "emotional_state_measures": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "measure_datatype": {
+          "bsonType": "string"
+        },
+        "measure_range": {
+          "bsonType": "string"
+        },
+        "measure_unit": {
+          "bsonType": "string"
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "has_measure_name_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_measure_name_id"
+      ]
+    }
+  },
+  "epoch_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "experiments": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "has_scenario_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "name",
+        "has_scenario_ids"
+      ]
+    }
+  },
+  "group_activities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "group_activity_executions": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "has_activity_id": {
+          "bsonType": "objectId"
+        },
+        "has_arrangement_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "next_activity_execution_id": {
+          "bsonType": "objectId"
+        },
+        "has_activity_execution_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 3
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_activity_id",
+        "has_activity_execution_ids"
+      ]
+    }
+  },
+  "imported_appearance_values": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "imported_measure_names": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "individual_activities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "individual_activity_executions": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "has_activity_id": {
+          "bsonType": "objectId"
+        },
+        "has_arrangement_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "next_activity_execution_id": {
+          "bsonType": "objectId"
+        },
+        "has_activity_execution_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_activity_id",
+        "has_activity_execution_id"
+      ]
+    }
+  },
+  "irregularly_spaced_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "irregularly_spaced_timestamp_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "life_activities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "measures": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "measure_datatype": {
+          "bsonType": "string"
+        },
+        "measure_range": {
+          "bsonType": "string"
+        },
+        "measure_unit": {
+          "bsonType": "string"
+        },
+        "has_measure_name_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_measure_name_id"
+      ]
+    }
+  },
+  "modalities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "observable_informations": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_life_activity_id": {
+          "bsonType": "objectId"
+        },
+        "has_modality_id": {
+          "bsonType": "objectId"
+        },
+        "has_recording_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_recording_id"
+      ]
+    }
+  },
+  "participant_states": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "age": {
+          "bsonType": "int"
+        },
+        "has_apperance_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "has_participant_id": {
+          "bsonType": "objectId"
+        },
+        "has_personality_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_participant_id"
+      ]
+    }
+  },
+  "participants": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "date_of_birth": {
+          "bsonType": "date"
+        },
+        "disorder": {
+          "bsonType": "string"
+        },
+        "has_sex_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "name"
+      ]
+    }
+  },
+  "participations": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_activity_execution_id": {
+          "bsonType": "objectId"
+        },
+        "has_participant_state_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_activity_execution_id",
+        "has_participant_state_id"
+      ]
+    }
+  },
+  "properties": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_key": {
+          "bsonType": "string"
+        },
+        "has_value": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "recordings": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_participation_id": {
+          "bsonType": "objectId"
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "has_registered_channel_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_participation_id"
+      ]
+    }
+  },
+  "registered_channels": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "has_channel_id": {
+          "bsonType": "objectId"
+        },
+        "has_registered_data_id": {
+          "bsonType": "objectId"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_registered_data_id"
+      ]
+    }
+  },
+  "registered_datas": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "registered_data_source": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "registered_data_source"
+      ]
+    }
+  },
+  "regularly_spaced_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "regularly_spaced_timestamp_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "sexes": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "iri": {
+          "bsonType": "string"
+        },
+        "label": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "timestamp_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  },
+  "two_persons_activities": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "two_persons_activity_executions": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "has_activity_id": {
+          "bsonType": "objectId"
+        },
+        "has_arrangement_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        },
+        "next_activity_execution_id": {
+          "bsonType": "objectId"
+        },
+        "has_activity_execution_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "has_activity_id",
+        "has_activity_execution_ids"
+      ]
+    }
+  },
+  "variable_length_epoch_time_serieses": {
+    "$jsonSchema": {
+      "bsonType": "object",
+      "properties": {
+        "metadata": {
+          "bsonType": "object",
+          "properties": {
+            "createdAt": {
+              "bsonType": "date"
+            },
+            "createdBy": {
+              "bsonType": "string"
+            },
+            "updatedAt": {
+              "bsonType": "date"
+            },
+            "notes": {
+              "bsonType": "string"
+            }
+          }
+        },
+        "name": {
+          "bsonType": "string"
+        },
+        "time_series_source": {
+          "bsonType": "string"
+        },
+        "has_measure_id": {
+          "bsonType": "objectId"
+        },
+        "has_observable_information_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          },
+          "minItems": 1
+        },
+        "has_property_ids": {
+          "bsonType": "array",
+          "items": {
+            "bsonType": "objectId"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "required": [
+        "time_series_source",
+        "has_measure_id",
+        "has_observable_information_ids"
+      ]
+    }
+  }
+}

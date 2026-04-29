@@ -1,0 +1,863 @@
+CollectionBlueprint(
+    name="activities",
+    source_class="Activity",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="activity_executions",
+    source_class="ActivityExecution",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_activity_id",
+            logical_name="has_activity",
+            source_collection="activity_executions",
+            target_collection="activities",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_arrangement_ids",
+            logical_name="has_arrangement",
+            source_collection="activity_executions",
+            target_collection="arrangements",
+            target_id_field="_id",
+            is_array=True,
+            required=False,
+            strength="weak",
+            cardinality="0..*",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..*(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="apperances",
+    source_class="Apperance",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="arrangements",
+    source_class="Arrangement",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="channels",
+    source_class="Channel",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="constant_length_epoch_time_serieses",
+    source_class="ConstantLengthEpochTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="emotional_state_measures",
+    source_class="EmotionalStateMeasure",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="emotional_state_measure_names",
+    source_class="EmotionalStateMeasureName",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="epoch_time_serieses",
+    source_class="EpochTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="experiments",
+    source_class="Experiment",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_scenario_ids",
+            logical_name="has_scenario",
+            source_collection="experiments",
+            target_collection="activity_executions",
+            target_id_field="_id",
+            is_array=True,
+            required=False,
+            strength="weak",
+            cardinality="0..*",
+            cardinality_source="default_inferred",
+            reason="strength=weak(SHARED_TARGET(inc=2));required=False(DEFAULT_REQUIRED);cardinality=0..*(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="group_activities",
+    source_class="GroupActivity",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="group_activity_executions",
+    source_class="GroupActivityExecution",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_activity_execution_ids",
+            logical_name="has_activity_execution",
+            source_collection="group_activity_executions",
+            target_collection="participations",
+            target_id_field="_id",
+            is_array=True,
+            required=True,
+            strength="weak",
+            cardinality="3..*",
+            cardinality_source="owl_explicit",
+            reason="INVERSE_AXIOM(required=True;cardinality=3..*(owl_explicit))",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="individual_activities",
+    source_class="IndividualActivity",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="individual_activity_executions",
+    source_class="IndividualActivityExecution",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_activity_execution_id",
+            logical_name="has_activity_execution",
+            source_collection="individual_activity_executions",
+            target_collection="participations",
+            target_id_field="_id",
+            is_array=False,
+            required=True,
+            strength="weak",
+            cardinality="1..1",
+            cardinality_source="owl_explicit",
+            reason="INVERSE_AXIOM(required=True;cardinality=1..1(owl_explicit))",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="irregularly_spaced_time_serieses",
+    source_class="IrregularlySpacedTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="irregularly_spaced_timestamp_time_serieses",
+    source_class="IrregularlySpacedTimestampTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="life_activities",
+    source_class="LifeActivity",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="measures",
+    source_class="Measure",
+    fields=[
+        FieldBlueprint("measure_datatype", "string", required=False, is_array=False),
+        FieldBlueprint("measure_range", "string", required=False, is_array=False),
+        FieldBlueprint("measure_unit", "string", required=False, is_array=False),
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_measure_name_id",
+            logical_name="has_measure_name",
+            source_collection="measures",
+            target_collection="measure_names",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="measure_names",
+    source_class="MeasureName",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="modalities",
+    source_class="Modality",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="observable_informations",
+    source_class="ObservableInformation",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_life_activity_id",
+            logical_name="has_life_activity",
+            source_collection="observable_informations",
+            target_collection="life_activities",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_modality_id",
+            logical_name="has_modality",
+            source_collection="observable_informations",
+            target_collection="modalities",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_recording_id",
+            logical_name="has_recording",
+            source_collection="observable_informations",
+            target_collection="recordings",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="participants",
+    source_class="Participant",
+    fields=[
+        FieldBlueprint("date_of_birth", "date", required=False, is_array=False),
+        FieldBlueprint("disorder", "string", required=False, is_array=False),
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_sex_id",
+            logical_name="has_sex",
+            source_collection="participants",
+            target_collection="sexs",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="participant_states",
+    source_class="ParticipantState",
+    fields=[
+        FieldBlueprint("age", "int", required=False, is_array=False),
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_apperance_ids",
+            logical_name="has_apperance",
+            source_collection="participant_states",
+            target_collection="apperances",
+            target_id_field="_id",
+            is_array=True,
+            required=False,
+            strength="weak",
+            cardinality="0..*",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..*(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_participant_id",
+            logical_name="has_participant",
+            source_collection="participant_states",
+            target_collection="participants",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_personality_ids",
+            logical_name="has_personality",
+            source_collection="participant_states",
+            target_collection="personalities",
+            target_id_field="_id",
+            is_array=True,
+            required=False,
+            strength="weak",
+            cardinality="0..*",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..*(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="participations",
+    source_class="Participation",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_activity_execution_id",
+            logical_name="has_activity_execution",
+            source_collection="participations",
+            target_collection="activity_executions",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(SHARED_TARGET(inc=2));required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_participant_state_id",
+            logical_name="has_participant_state",
+            source_collection="participations",
+            target_collection="participant_states",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="personal_group_arrangements",
+    source_class="PersonalGroupArrangement",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="personal_two_persons_arrangements",
+    source_class="PersonalTwoPersonsArrangement",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="personalities",
+    source_class="Personality",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="recordings",
+    source_class="Recording",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_participation_id",
+            logical_name="has_participation",
+            source_collection="recordings",
+            target_collection="participations",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_registered_channel_id",
+            logical_name="has_registered_channel",
+            source_collection="recordings",
+            target_collection="registered_channels",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="registered_channels",
+    source_class="RegisteredChannel",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_channel_id",
+            logical_name="has_channel",
+            source_collection="registered_channels",
+            target_collection="channels",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_registered_data_id",
+            logical_name="has_registered_data",
+            source_collection="registered_channels",
+            target_collection="registered_datas",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="registered_datas",
+    source_class="RegisteredData",
+    fields=[
+        FieldBlueprint("registered_data_source", "string", required=False, is_array=False),
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="regularly_spaced_time_serieses",
+    source_class="RegularlySpacedTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="regularly_spaced_timestamp_time_serieses",
+    source_class="RegularlySpacedTimestampTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="sexs",
+    source_class="Sex",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="time_serieses",
+    source_class="TimeSeries",
+    fields=[
+        FieldBlueprint("time_series_source", "string", required=False, is_array=False),
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_measure_id",
+            logical_name="has_measure",
+            source_collection="time_serieses",
+            target_collection="measures",
+            target_id_field="_id",
+            is_array=False,
+            required=False,
+            strength="weak",
+            cardinality="0..1",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..1(default_inferred)",
+        ),
+        ReferenceBlueprint(
+            name="has_observable_information_ids",
+            logical_name="has_observable_information",
+            source_collection="time_serieses",
+            target_collection="observable_informations",
+            target_id_field="_id",
+            is_array=True,
+            required=False,
+            strength="weak",
+            cardinality="0..*",
+            cardinality_source="default_inferred",
+            reason="strength=weak(DEFAULT_WEAK);required=False(DEFAULT_REQUIRED);cardinality=0..*(default_inferred)",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="timestamp_time_serieses",
+    source_class="TimestampTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="two_persons_activities",
+    source_class="TwoPersonsActivity",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)
+
+CollectionBlueprint(
+    name="two_persons_activity_executions",
+    source_class="TwoPersonsActivityExecution",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+        ReferenceBlueprint(
+            name="has_activity_execution_ids",
+            logical_name="has_activity_execution",
+            source_collection="two_persons_activity_executions",
+            target_collection="participations",
+            target_id_field="_id",
+            is_array=True,
+            required=True,
+            strength="weak",
+            cardinality="2..2",
+            cardinality_source="owl_explicit",
+            reason="INVERSE_AXIOM(required=True;cardinality=2..2(owl_explicit))",
+        ),
+    ]
+)
+
+CollectionBlueprint(
+    name="variable_length_epoch_time_serieses",
+    source_class="VariableLengthEpochTimeSeries",
+    fields=[
+    ],
+    metadata_fields=[
+        FieldBlueprint("metadata.createdAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.createdBy", "string", required=False, is_array=False),
+        FieldBlueprint("metadata.updatedAt", "date", required=False, is_array=False),
+        FieldBlueprint("metadata.notes", "string", required=False, is_array=False),
+    ],
+    references=[
+    ]
+)

@@ -1,0 +1,26 @@
+{
+  "demo": "unified_pipeline_with_interactive_dal",
+  "input_mode": "separated",
+  "input_summary": {
+    "input_mode": "separated",
+    "schema_owl": "D:\\pandas\\project_pycharm\\Ma\\scripts\\owlAC.txt",
+    "instance_owl": "D:\\pandas\\project_pycharm\\Ma\\scripts\\inconsistencyDataset.txt"
+  },
+  "mongo_uri": "mongodb://localhost:27017",
+  "db_name": "demo_owlac",
+  "workdir": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs",
+  "generated_files": {
+    "ontology_blueprint": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\ontology_blueprint.json",
+    "ontology_blueprint_base": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\ontology_blueprint_base.json",
+    "mongo_validators": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\mongo_validators.json",
+    "ontology_blueprint_effective": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\ontology_blueprint_effective.json",
+    "import_summary": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\import_summary.json",
+    "crud_session_log": "D:\\pandas\\project_pycharm\\Ma\\scripts\\demo_outputs\\crud_session_log.json"
+  },
+  "steps": [
+    "STEP 1 - Prepare ontology_blueprint.json (mixed or separated input mode)",
+    "STEP 2 - Generate mongo_validators.json from ontology_blueprint.json",
+    "STEP 3 - Build MongoDB data layer and import instances",
+    "STEP 4 - Interactive CRUD validation through the DAL"
+  ]
+}

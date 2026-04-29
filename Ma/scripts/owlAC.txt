@@ -1,0 +1,1658 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/GRISERA/contextualOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/GRISERA/contextualOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/GRISERA/contextualOntology"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="contextualOntology" IRI="http://www.semanticweb.org/GRISERA/contextualOntology#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Apperance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConstantLengthEpochTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmotionalStateMeasure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmotionalStateMeasureName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EpochTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Experiment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GroupActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndividualActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrregularlySpacedTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IrregularlySpacedTimestampTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LifeActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeasureName"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Modality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObservableInformation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParticipantState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalGroupArrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PersonalTwoPersonsArrangement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Personality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Recording"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisteredChannel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegisteredData"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegularlySpacedTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RegularlySpacedTimestampTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TimestampTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwoPersonsActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwoPersonsActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VariableLengthEpochTimeSeries"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasApperance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArrangement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChannel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLifeActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeasure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMeasureName"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasObservableInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipantState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPersonality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRecording"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegisteredChannel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegisteredData"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasScenario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSex"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNextOfActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isScenarioOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nextActivityExecution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#age"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateOfBirth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#disorder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#measureDatatype"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#measureRange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#measureUnit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#registeredDataSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#timeSeriesSource"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelAudio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelBVP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelChestSize"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelDepthVideo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelECG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelEDA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelEEG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelEMG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelRGBVideo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#channelTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityBrainActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityHeartActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityMovement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityMusclesActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityPerspiration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityRespiration"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivitySound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lifeActivityThermalRegulation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityBodyPosture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityEyeGaze"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityFacialExpressions"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityGestures"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityHRV"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityHeadMovement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityHeartRate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityMotion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityMuscleTension"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityNeuralActivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityPeripheralTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityProsodyOfSpeech"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityRESPIntensity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalitySkinConductance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#modalityVocalization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sexFemale"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#sexMale"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#conceptType"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Activity"/>
+        <ObjectUnionOf>
+            <Class IRI="#GroupActivity"/>
+            <Class IRI="#IndividualActivity"/>
+            <Class IRI="#TwoPersonsActivity"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Arrangement"/>
+        <ObjectUnionOf>
+            <Class IRI="#PersonalGroupArrangement"/>
+            <Class IRI="#PersonalTwoPersonsArrangement"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActivityExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivity"/>
+            <Class IRI="#Activity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstantLengthEpochTimeSeries"/>
+        <Class IRI="#EpochTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConstantLengthEpochTimeSeries"/>
+        <Class IRI="#RegularlySpacedTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmotionalStateMeasure"/>
+        <Class IRI="#Measure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmotionalStateMeasureName"/>
+        <Class IRI="#MeasureName"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EpochTimeSeries"/>
+        <Class IRI="#TimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasScenario"/>
+            <Class IRI="#ActivityExecution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Experiment"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupActivityExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivity"/>
+            <Class IRI="#GroupActivity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GroupActivityExecution"/>
+        <ObjectMinCardinality cardinality="3">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasActivityExecution"/>
+            </ObjectInverseOf>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActivityExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivity"/>
+            <Class IRI="#IndividualActivity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndividualActivityExecution"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasActivityExecution"/>
+            </ObjectInverseOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrregularlySpacedTimeSeries"/>
+        <Class IRI="#TimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrregularlySpacedTimestampTimeSeries"/>
+        <Class IRI="#IrregularlySpacedTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IrregularlySpacedTimestampTimeSeries"/>
+        <Class IRI="#TimestampTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Measure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMeasureName"/>
+            <Class IRI="#MeasureName"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObservableInformation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRecording"/>
+            <Class IRI="#Recording"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participant"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#name"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParticipantState"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParticipant"/>
+            <Class IRI="#Participant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivityExecution"/>
+            <Class IRI="#ActivityExecution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParticipantState"/>
+            <Class IRI="#ParticipantState"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalGroupArrangement"/>
+        <Class IRI="#Arrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalGroupArrangement"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasArrangement"/>
+            </ObjectInverseOf>
+            <Class IRI="#GroupActivityExecution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalTwoPersonsArrangement"/>
+        <Class IRI="#Arrangement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PersonalTwoPersonsArrangement"/>
+        <ObjectAllValuesFrom>
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasArrangement"/>
+            </ObjectInverseOf>
+            <Class IRI="#TwoPersonsActivityExecution"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Recording"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParticipation"/>
+            <Class IRI="#Participation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisteredChannel"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRegisteredData"/>
+            <Class IRI="#RegisteredData"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegisteredData"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#registeredDataSource"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegularlySpacedTimeSeries"/>
+        <Class IRI="#TimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegularlySpacedTimestampTimeSeries"/>
+        <Class IRI="#RegularlySpacedTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RegularlySpacedTimestampTimeSeries"/>
+        <Class IRI="#TimestampTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeSeries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasMeasure"/>
+            <Class IRI="#Measure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeSeries"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasObservableInformation"/>
+            <Class IRI="#ObservableInformation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimeSeries"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#timeSeriesSource"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TimestampTimeSeries"/>
+        <Class IRI="#TimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoPersonsActivity"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoPersonsActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoPersonsActivityExecution"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasActivity"/>
+            <Class IRI="#TwoPersonsActivity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwoPersonsActivityExecution"/>
+        <ObjectExactCardinality cardinality="2">
+            <ObjectInverseOf>
+                <ObjectProperty IRI="#hasActivityExecution"/>
+            </ObjectInverseOf>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariableLengthEpochTimeSeries"/>
+        <Class IRI="#EpochTimeSeries"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VariableLengthEpochTimeSeries"/>
+        <Class IRI="#IrregularlySpacedTimeSeries"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Activity"/>
+        <Class IRI="#ActivityExecution"/>
+        <Class IRI="#Apperance"/>
+        <Class IRI="#Arrangement"/>
+        <Class IRI="#Channel"/>
+        <Class IRI="#Experiment"/>
+        <Class IRI="#LifeActivity"/>
+        <Class IRI="#Measure"/>
+        <Class IRI="#MeasureName"/>
+        <Class IRI="#Modality"/>
+        <Class IRI="#ObservableInformation"/>
+        <Class IRI="#Participant"/>
+        <Class IRI="#ParticipantState"/>
+        <Class IRI="#Participation"/>
+        <Class IRI="#Personality"/>
+        <Class IRI="#Recording"/>
+        <Class IRI="#RegisteredChannel"/>
+        <Class IRI="#RegisteredData"/>
+        <Class IRI="#Sex"/>
+        <Class IRI="#TimeSeries"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#EpochTimeSeries"/>
+        <Class IRI="#TimestampTimeSeries"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GroupActivity"/>
+        <Class IRI="#IndividualActivity"/>
+        <Class IRI="#TwoPersonsActivity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#IrregularlySpacedTimeSeries"/>
+        <Class IRI="#RegularlySpacedTimeSeries"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#PersonalGroupArrangement"/>
+        <Class IRI="#PersonalTwoPersonsArrangement"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelAudio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelBVP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelChestSize"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelDepthVideo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelECG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelEDA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelEEG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelEMG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelRGBVideo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Channel"/>
+        <NamedIndividual IRI="#channelTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityBrainActivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityHeartActivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityMovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityMusclesActivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityPerspiration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityRespiration"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivitySound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LifeActivity"/>
+        <NamedIndividual IRI="#lifeActivityThermalRegulation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityBodyPosture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityEyeGaze"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityFacialExpressions"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityGestures"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityHRV"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityHeadMovement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityHeartRate"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityMotion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityMuscleTension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityNeuralActivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityPeripheralTemperature"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityProsodyOfSpeech"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityRESPIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalitySkinConductance"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Modality"/>
+        <NamedIndividual IRI="#modalityVocalization"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sex"/>
+        <NamedIndividual IRI="#sexFemale"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Sex"/>
+        <NamedIndividual IRI="#sexMale"/>
+    </ClassAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasScenario"/>
+        <ObjectProperty IRI="#isScenarioOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isNextOfActivityExecution"/>
+        <ObjectProperty IRI="#nextActivityExecution"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasActivity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasActivityExecution"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasChannel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLifeActivity"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMeasure"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasMeasureName"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasModality"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasParticipant"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasParticipantState"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasParticipation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRecording"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRegisteredChannel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRegisteredData"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSex"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isNextOfActivityExecution"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isScenarioOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#nextActivityExecution"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActivityExecution"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasApperance"/>
+        <Class IRI="#ParticipantState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArrangement"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChannel"/>
+        <Class IRI="#RegisteredChannel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLifeActivity"/>
+        <Class IRI="#ObservableInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeasure"/>
+        <Class IRI="#TimeSeries"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMeasureName"/>
+        <Class IRI="#Measure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModality"/>
+        <Class IRI="#ObservableInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasObservableInformation"/>
+        <Class IRI="#TimeSeries"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class IRI="#ParticipantState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipantState"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipation"/>
+        <Class IRI="#Recording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPersonality"/>
+        <Class IRI="#ParticipantState"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRecording"/>
+        <Class IRI="#ObservableInformation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegisteredChannel"/>
+        <Class IRI="#Recording"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegisteredData"/>
+        <Class IRI="#RegisteredChannel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasScenario"/>
+        <Class IRI="#Experiment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSex"/>
+        <Class IRI="#Participant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#nextActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasApperance"/>
+        <Class IRI="#Apperance"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArrangement"/>
+        <Class IRI="#Arrangement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChannel"/>
+        <Class IRI="#Channel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLifeActivity"/>
+        <Class IRI="#LifeActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMeasure"/>
+        <Class IRI="#Measure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMeasureName"/>
+        <Class IRI="#MeasureName"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModality"/>
+        <Class IRI="#Modality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasObservableInformation"/>
+        <Class IRI="#ObservableInformation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipant"/>
+        <Class IRI="#Participant"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipantState"/>
+        <Class IRI="#ParticipantState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipation"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPersonality"/>
+        <Class IRI="#Personality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRecording"/>
+        <Class IRI="#Recording"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegisteredChannel"/>
+        <Class IRI="#RegisteredChannel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegisteredData"/>
+        <Class IRI="#RegisteredData"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasScenario"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSex"/>
+        <Class IRI="#Sex"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#nextActivityExecution"/>
+        <Class IRI="#ActivityExecution"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#age"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#dateOfBirth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#measureDatatype"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#measureRange"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#name"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#registeredDataSource"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#timeSeriesSource"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#age"/>
+        <Class IRI="#ParticipantState"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Class IRI="#Participant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#disorder"/>
+        <Class IRI="#Participant"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#measureDatatype"/>
+        <Class IRI="#Measure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#measureRange"/>
+        <Class IRI="#Measure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#measureUnit"/>
+        <Class IRI="#Measure"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#registeredDataSource"/>
+        <Class IRI="#RegisteredData"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#timeSeriesSource"/>
+        <Class IRI="#TimeSeries"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#age"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#dateOfBirth"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#disorder"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#measureDatatype"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#measureRange"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#measureUnit"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#registeredDataSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#timeSeriesSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Activity</IRI>
+        <Literal xml:lang="en">A pattern of an activity done within an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ActivityExecution</IRI>
+        <Literal xml:lang="en">An execution of a specific activity described by an activity pattern. An activity execution takes place in a certain period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#Apperance</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Apperance</IRI>
+        <Literal xml:lang="en">An apperance of a participant. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a model of apperance the subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#Arrangement</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Arrangement</IRI>
+        <Literal xml:lang="en">A placement of participants within group or two persons activities. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a model of arrangement subconcepts of PersonalGroupArrangement of PersonalTwoPersonsArrangement concepts should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Channel</IRI>
+        <Literal xml:lang="en">A medium for a registration of a signal holding informatin on observable symptoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConstantLengthEpochTimeSeries</IRI>
+        <Literal xml:lang="en">Epoch time series with a constant epoch length.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmotionalStateMeasure</IRI>
+        <Literal xml:lang="en">A specific measure representing an emotional state.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#EmotionalStateMeasureName</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmotionalStateMeasureName</IRI>
+        <Literal xml:lang="en">A list of emotional state names. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define lexicons for emotion states names subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EpochTimeSeries</IRI>
+        <Literal xml:lang="en">Time series with data points referring to a whole epoch.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Experiment</IRI>
+        <Literal xml:lang="en">A list of activities done by participants in order to gather various biosignals and emotional states for the emotion recognition purpose.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GroupActivity</IRI>
+        <Literal xml:lang="en">A pattern of a group activity done within an experiment. This pattern describes an activity which is performed by three or more participants together.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GroupActivityExecution</IRI>
+        <Literal xml:lang="en">An execution of a specific group activity described by a group activity pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndividualActivity</IRI>
+        <Literal xml:lang="en">A pattern of an individual activity done within an experiment. This pattern describes an activity which is performed by one participant only.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndividualActivityExecution</IRI>
+        <Literal xml:lang="en">An execution of a specific individual activity described by an individual activity pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IrregularlySpacedTimeSeries</IRI>
+        <Literal xml:lang="en">Time series with sampling done with a constant length time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IrregularlySpacedTimestampTimeSeries</IRI>
+        <Literal xml:lang="en">Timestamp time series with sampling done with a constant length time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LifeActivity</IRI>
+        <Literal xml:lang="en">Conscious and unconscious actions of a human body, which generate a specified symptom of an emotional state, which can be further analysed in a process of emotion recognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Measure</IRI>
+        <Literal xml:lang="en">Measured or estimated value which is stored within time series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#MeasureName</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MeasureName</IRI>
+        <Literal xml:lang="en">A measure name. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define lexicons for measure names subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Modality</IRI>
+        <Literal xml:lang="en">A type of observable information which is used as a proxy for the emotion recognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ObservableInformation</IRI>
+        <Literal xml:lang="en">Observable information which is used as a proxy for the emotion recognition.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Participant</IRI>
+        <Literal xml:lang="en">A person taking part in an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParticipantState</IRI>
+        <Literal xml:lang="en">A state of a participant at a specific period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Participation</IRI>
+        <Literal xml:lang="en">A participation of a participant within a specific activity execution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#PersonalGroupArrangement</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalGroupArrangement</IRI>
+        <Literal xml:lang="en">A placement of participants within group activities. To define a model of a group arrangement subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#PersonalTwoPersonsArrangement</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PersonalTwoPersonsArrangement</IRI>
+        <Literal xml:lang="en">A placement of participants within two persons activities. To define a model of a two persons arrangement subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#Personality</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Personality</IRI>
+        <Literal xml:lang="en">A personality of a participant. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a personality model subconcepts of this concept should be defined.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Recording</IRI>
+        <Literal xml:lang="en">A recording of a participation of a participant within an activity execution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegisteredChannel</IRI>
+        <Literal xml:lang="en">A specific channel recorded on registered data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegisteredData</IRI>
+        <Literal xml:lang="en">A registration of signals holding information on observable symptoms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegularlySpacedTimeSeries</IRI>
+        <Literal xml:lang="en">Time series with sampling done with a non-constant length time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RegularlySpacedTimestampTimeSeries</IRI>
+        <Literal>Timestamp time series with sampling done with a non-constant length time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Sex</IRI>
+        <Literal xml:lang="en">Holds information about a sex of participants.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TimeSeries</IRI>
+        <Literal xml:lang="en">Time series for a specific measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TimestampTimeSeries</IRI>
+        <Literal xml:lang="en">Time series with data points referring to a single moment of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TwoPersonsActivity</IRI>
+        <Literal xml:lang="en">A pattern of an activity done by two participants together within an experiment. This pattern describes an activity which is performed by exactly two participants together.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TwoPersonsActivityExecution</IRI>
+        <Literal xml:lang="en">An execution of a specific two persons activity described by a two persons activity pattern.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#VariableLengthEpochTimeSeries</IRI>
+        <Literal xml:lang="en">Epoch time series with a non-constant epoch length.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#age</IRI>
+        <Literal xml:lang="en">A data property allowing to define a participant age for a specific period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelAudio</IRI>
+        <Literal xml:lang="en">Audio channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelBVP</IRI>
+        <Literal xml:lang="en">Blood Vlume Pulse (BVP) channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelChestSize</IRI>
+        <Literal xml:lang="en">Chest size channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelDepthVideo</IRI>
+        <Literal xml:lang="en">Depth video channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelECG</IRI>
+        <Literal xml:lang="en">Electrocardiography channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelEDA</IRI>
+        <Literal xml:lang="en">Electrodermal activity channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelEEG</IRI>
+        <Literal xml:lang="en">Electroencephalography channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelEMG</IRI>
+        <Literal xml:lang="en">Electromyography channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelRGBVideo</IRI>
+        <Literal xml:lang="en">RGB video channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#channelTemperature</IRI>
+        <Literal xml:lang="en">Temperature channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#conceptType"/>
+        <IRI>#conceptType</IRI>
+        <Literal xml:lang="en">abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dateOfBirth</IRI>
+        <Literal xml:lang="en">A data property allowing to define a date of birth for a participant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#disorder</IRI>
+        <Literal xml:lang="en">A data property allowing to define a specific disorder of a participant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasActivity</IRI>
+        <Literal xml:lang="en">An object property allowing to define an activity pattern for an activity execution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasActivityExecution</IRI>
+        <Literal xml:lang="en">An object property allowing to define in which activity execution a participant takes part within a specific participation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasApperance</IRI>
+        <Literal xml:lang="en">An object property allowing to define an apperance of a particpant in a specific time period.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasArrangement</IRI>
+        <Literal xml:lang="en">An object property allowing to define an arrangement of participants within a specific activity execution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasChannel</IRI>
+        <Literal xml:lang="en">An object property allowing to define a channel registered on a specific registered channel of registered data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLifeActivity</IRI>
+        <Literal xml:lang="en">An object property allowing to define an observed life activity for a specific observable information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMeasure</IRI>
+        <Literal xml:lang="en">An object property allowing to define a measure for a specific time series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasMeasureName</IRI>
+        <Literal xml:lang="en">An object property allowing to define a measure name for a specific measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasModality</IRI>
+        <Literal xml:lang="en">An object property allowing to define an observed modality for a specific observable information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasObservableInformation</IRI>
+        <Literal xml:lang="en">An object property allowing to define an observable information used to generate a specific time series.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParticipant</IRI>
+        <Literal xml:lang="en">An object property allowing to relate a participant state with a specific participant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParticipantState</IRI>
+        <Literal xml:lang="en">An object property allowing to define in what state a participant is in a specific participation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParticipation</IRI>
+        <Literal xml:lang="en">An object property allowing to define which participation is recorded within a specific recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPersonality</IRI>
+        <Literal xml:lang="en">An object property allowing to define a personality of a participant within a specific period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRecording</IRI>
+        <Literal xml:lang="en">An object property allowing to define a recording for a specific observable information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRegisteredChannel</IRI>
+        <Literal xml:lang="en">An object property allowing to define a registered channel for a specific recording.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRegisteredData</IRI>
+        <Literal xml:lang="en">An object property allowing to define registered data recorded on a specific registered channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasScenario</IRI>
+        <Literal xml:lang="en">An object property allowing to define scenarios of an experiment. A scenario is understood as a list of activity executions. The first activity execution within a scenario points at a consequent activity execution with the nextActivityExecution role.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasSex</IRI>
+        <Literal xml:lang="en">An object property allowing to define a sex of a participant.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isNextOfActivityExecution</IRI>
+        <Literal xml:lang="en">An inverse of the object property nextActivityExuction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isScenarioOf</IRI>
+        <Literal>An inverse of the object property hasScenario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityBrainActivity</IRI>
+        <Literal xml:lang="en">Brain activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityHeartActivity</IRI>
+        <Literal xml:lang="en">Heart activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityMovement</IRI>
+        <Literal xml:lang="en">Movement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityMusclesActivity</IRI>
+        <Literal xml:lang="en">Muscle activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityPerspiration</IRI>
+        <Literal xml:lang="en">Perspiration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityRespiration</IRI>
+        <Literal xml:lang="en">Respiration.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivitySound</IRI>
+        <Literal xml:lang="en">Sound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lifeActivityThermalRegulation</IRI>
+        <Literal xml:lang="en">Thermal regulation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measureDatatype</IRI>
+        <Literal xml:lang="en">A data property allowing to define a data type of a measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measureRange</IRI>
+        <Literal xml:lang="en">A data property allowing to define a range of a measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#measureUnit</IRI>
+        <Literal>The datatype property, which allows for defiing unit of measure using The Unified Code for Units of Measure [https://ucum.org/trac].</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityBodyPosture</IRI>
+        <Literal xml:lang="en">Body posture.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityEyeGaze</IRI>
+        <Literal xml:lang="en">Eye gaze.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityFacialExpressions</IRI>
+        <Literal xml:lang="en">Facial expressions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityGestures</IRI>
+        <Literal xml:lang="en">Gestures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityHRV</IRI>
+        <Literal xml:lang="en">Heart rate variability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityHeadMovement</IRI>
+        <Literal xml:lang="en">Head movement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityHeartRate</IRI>
+        <Literal xml:lang="en">Heart rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityMotion</IRI>
+        <Literal xml:lang="en">Motion (different from motion identified by other individuals).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityMuscleTension</IRI>
+        <Literal xml:lang="en">Muscle tension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityNeuralActivity</IRI>
+        <Literal xml:lang="en">Neural activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityPeripheralTemperature</IRI>
+        <Literal xml:lang="en">Peripheral temperature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityProsodyOfSpeech</IRI>
+        <Literal xml:lang="en">Prosody of speech.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityRESPIntensity</IRI>
+        <Literal xml:lang="en">Rspiratory rate.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalitySkinConductance</IRI>
+        <Literal xml:lang="en">Skin conductance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#modalityVocalization</IRI>
+        <Literal xml:lang="en">Vocalization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">A data property allowing to define a name of a specific entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#nextActivityExecution</IRI>
+        <Literal xml:lang="en">An object property allowing to define a sequence of activities in a scenario.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#registeredDataSource</IRI>
+        <Literal xml:lang="en">An URI pointing at a recording data source. The URI address where recorded data is located.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sexFemale</IRI>
+        <Literal xml:lang="en">Female.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sexMale</IRI>
+        <Literal xml:lang="en">Male.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#timeSeriesSource</IRI>
+        <Literal xml:lang="en">An URI pointing at a time series source. The URI address where a file containing time series is located. The file is a csv file with a list of pairs consisting of a time stamp and a data point.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

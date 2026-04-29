@@ -1,0 +1,43 @@
+{
+  "inserted_or_upserted": 1074,
+  "reference_updates": 1715,
+  "delayed_inserted": 1074,
+  "resolution_rounds": 7,
+  "skipped_no_type": 0,
+  "skipped_no_collection": 0,
+  "skipped_still_incomplete": 80,
+  "skipped_by_collection": {
+    "registered_channels": 40,
+    "registered_datas": 40
+  },
+  "skipped_by_combo": {
+    "registered_channels :: has_registered_data_id": 40,
+    "registered_datas :: registered_data_source": 40
+  },
+  "skipped_examples": {
+    "registered_channels :: has_registered_data_id": [
+      "rcP09UL",
+      "rcP06DR",
+      "rcP10DL",
+      "rcP05DR",
+      "rcP07DR",
+      "rcP09UR",
+      "rcP02UR",
+      "rcP04DR"
+    ],
+    "registered_datas :: registered_data_source": [
+      "rdP09UL",
+      "rdP06DR",
+      "rdP10DL",
+      "rdP05DR",
+      "rdP07DR",
+      "rdP09UR",
+      "rdP02UR",
+      "rdP04DR"
+    ]
+  },
+  "docs_with_unresolved_imports": 0,
+  "unresolved_import_references": 0,
+  "unresolved_import_examples": [],
+  "imported_ontologies_detected": []
+}

@@ -1,0 +1,2336 @@
+{
+  "ontology_info": {
+    "ontology_iri": "http://www.semanticweb.org/GRISERA/contextualOntology",
+    "xml_base": "http://www.semanticweb.org/GRISERA/contextualOntology",
+    "prefixes": {
+      "": "http://www.semanticweb.org/GRISERA/contextualOntology",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "contextualOntology": "http://www.semanticweb.org/GRISERA/contextualOntology#"
+    },
+    "namespaces": {
+      "": "http://www.w3.org/2002/07/owl#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "annotations": {}
+  },
+  "classes": {
+    "Activity": {
+      "name": "Activity",
+      "iri": "#Activity",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A pattern of an activity done within an experiment.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "ActivityExecution": {
+      "name": "ActivityExecution",
+      "iri": "#ActivityExecution",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An execution of a specific activity described by an activity pattern. An activity execution takes place in a certain period of time.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Apperance": {
+      "name": "Apperance",
+      "iri": "#Apperance",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "An apperance of a participant. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a model of apperance the subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Arrangement": {
+      "name": "Arrangement",
+      "iri": "#Arrangement",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A placement of participants within group or two persons activities. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a model of arrangement subconcepts of PersonalGroupArrangement of PersonalTwoPersonsArrangement concepts should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Channel": {
+      "name": "Channel",
+      "iri": "#Channel",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A medium for a registration of a signal holding informatin on observable symptoms.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "ConstantLengthEpochTimeSeries": {
+      "name": "ConstantLengthEpochTimeSeries",
+      "iri": "#ConstantLengthEpochTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Epoch time series with a constant epoch length.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "EmotionalStateMeasure": {
+      "name": "EmotionalStateMeasure",
+      "iri": "#EmotionalStateMeasure",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A specific measure representing an emotional state.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "EmotionalStateMeasureName": {
+      "name": "EmotionalStateMeasureName",
+      "iri": "#EmotionalStateMeasureName",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A list of emotional state names. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define lexicons for emotion states names subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "EpochTimeSeries": {
+      "name": "EpochTimeSeries",
+      "iri": "#EpochTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Time series with data points referring to a whole epoch.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Experiment": {
+      "name": "Experiment",
+      "iri": "#Experiment",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A list of activities done by participants in order to gather various biosignals and emotional states for the emotion recognition purpose.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "GroupActivity": {
+      "name": "GroupActivity",
+      "iri": "#GroupActivity",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A pattern of a group activity done within an experiment. This pattern describes an activity which is performed by three or more participants together.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "GroupActivityExecution": {
+      "name": "GroupActivityExecution",
+      "iri": "#GroupActivityExecution",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An execution of a specific group activity described by a group activity pattern.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "IndividualActivity": {
+      "name": "IndividualActivity",
+      "iri": "#IndividualActivity",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A pattern of an individual activity done within an experiment. This pattern describes an activity which is performed by one participant only.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "IndividualActivityExecution": {
+      "name": "IndividualActivityExecution",
+      "iri": "#IndividualActivityExecution",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An execution of a specific individual activity described by an individual activity pattern.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "IrregularlySpacedTimeSeries": {
+      "name": "IrregularlySpacedTimeSeries",
+      "iri": "#IrregularlySpacedTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Time series with sampling done with a constant length time period.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "IrregularlySpacedTimestampTimeSeries": {
+      "name": "IrregularlySpacedTimestampTimeSeries",
+      "iri": "#IrregularlySpacedTimestampTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Timestamp time series with sampling done with a constant length time period.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "LifeActivity": {
+      "name": "LifeActivity",
+      "iri": "#LifeActivity",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Conscious and unconscious actions of a human body, which generate a specified symptom of an emotional state, which can be further analysed in a process of emotion recognition.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Measure": {
+      "name": "Measure",
+      "iri": "#Measure",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Measured or estimated value which is stored within time series.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "MeasureName": {
+      "name": "MeasureName",
+      "iri": "#MeasureName",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A measure name. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define lexicons for measure names subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Modality": {
+      "name": "Modality",
+      "iri": "#Modality",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A type of observable information which is used as a proxy for the emotion recognition.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "ObservableInformation": {
+      "name": "ObservableInformation",
+      "iri": "#ObservableInformation",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Observable information which is used as a proxy for the emotion recognition.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Participant": {
+      "name": "Participant",
+      "iri": "#Participant",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A person taking part in an experiment.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "ParticipantState": {
+      "name": "ParticipantState",
+      "iri": "#ParticipantState",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A state of a participant at a specific period of time.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Participation": {
+      "name": "Participation",
+      "iri": "#Participation",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A participation of a participant within a specific activity execution.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "PersonalGroupArrangement": {
+      "name": "PersonalGroupArrangement",
+      "iri": "#PersonalGroupArrangement",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A placement of participants within group activities. To define a model of a group arrangement subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "PersonalTwoPersonsArrangement": {
+      "name": "PersonalTwoPersonsArrangement",
+      "iri": "#PersonalTwoPersonsArrangement",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A placement of participants within two persons activities. To define a model of a two persons arrangement subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Personality": {
+      "name": "Personality",
+      "iri": "#Personality",
+      "annotations": {
+        "conceptType": [
+          {
+            "value": "abstract",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ],
+        "rdfs:comment": [
+          {
+            "value": "A personality of a participant. This is a concept for which subconcepts can be modelled to define so called user-defined model extension points. To define a personality model subconcepts of this concept should be defined.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Recording": {
+      "name": "Recording",
+      "iri": "#Recording",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A recording of a participation of a participant within an activity execution.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "RegisteredChannel": {
+      "name": "RegisteredChannel",
+      "iri": "#RegisteredChannel",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A specific channel recorded on registered data.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "RegisteredData": {
+      "name": "RegisteredData",
+      "iri": "#RegisteredData",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A registration of signals holding information on observable symptoms.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "RegularlySpacedTimeSeries": {
+      "name": "RegularlySpacedTimeSeries",
+      "iri": "#RegularlySpacedTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Time series with sampling done with a non-constant length time period.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "RegularlySpacedTimestampTimeSeries": {
+      "name": "RegularlySpacedTimestampTimeSeries",
+      "iri": "#RegularlySpacedTimestampTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Timestamp time series with sampling done with a non-constant length time period.",
+            "lang": null,
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "Sex": {
+      "name": "Sex",
+      "iri": "#Sex",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Holds information about a sex of participants.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "TimeSeries": {
+      "name": "TimeSeries",
+      "iri": "#TimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Time series for a specific measure.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "TimestampTimeSeries": {
+      "name": "TimestampTimeSeries",
+      "iri": "#TimestampTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Time series with data points referring to a single moment of time.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "TwoPersonsActivity": {
+      "name": "TwoPersonsActivity",
+      "iri": "#TwoPersonsActivity",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A pattern of an activity done by two participants together within an experiment. This pattern describes an activity which is performed by exactly two participants together.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "TwoPersonsActivityExecution": {
+      "name": "TwoPersonsActivityExecution",
+      "iri": "#TwoPersonsActivityExecution",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An execution of a specific two persons activity described by a two persons activity pattern.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "VariableLengthEpochTimeSeries": {
+      "name": "VariableLengthEpochTimeSeries",
+      "iri": "#VariableLengthEpochTimeSeries",
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Epoch time series with a non-constant epoch length.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    }
+  },
+  "data_properties": {
+    "age": {
+      "name": "age",
+      "iri": "#age",
+      "domains": [
+        "ParticipantState"
+      ],
+      "ranges": [
+        "xsd:integer"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a participant age for a specific period of time.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "dateOfBirth": {
+      "name": "dateOfBirth",
+      "iri": "#dateOfBirth",
+      "domains": [
+        "Participant"
+      ],
+      "ranges": [
+        "xsd:dateTime"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a date of birth for a participant.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "disorder": {
+      "name": "disorder",
+      "iri": "#disorder",
+      "domains": [
+        "Participant"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": false,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a specific disorder of a participant.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "measureDatatype": {
+      "name": "measureDatatype",
+      "iri": "#measureDatatype",
+      "domains": [
+        "Measure"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a data type of a measure.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "measureRange": {
+      "name": "measureRange",
+      "iri": "#measureRange",
+      "domains": [
+        "Measure"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a range of a measure.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "measureUnit": {
+      "name": "measureUnit",
+      "iri": "#measureUnit",
+      "domains": [
+        "Measure"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": false,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "The datatype property, which allows for defiing unit of measure using The Unified Code for Units of Measure [https://ucum.org/trac].",
+            "lang": null,
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "name": {
+      "name": "name",
+      "iri": "#name",
+      "domains": [
+        "owl:Thing"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "A data property allowing to define a name of a specific entity.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "registeredDataSource": {
+      "name": "registeredDataSource",
+      "iri": "#registeredDataSource",
+      "domains": [
+        "RegisteredData"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An URI pointing at a recording data source. The URI address where recorded data is located.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "timeSeriesSource": {
+      "name": "timeSeriesSource",
+      "iri": "#timeSeriesSource",
+      "domains": [
+        "TimeSeries"
+      ],
+      "ranges": [
+        "xsd:string"
+      ],
+      "is_functional": true,
+      "cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An URI pointing at a time series source. The URI address where a file containing time series is located. The file is a csv file with a list of pairs consisting of a time stamp and a data point.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    }
+  },
+  "object_properties": {
+    "hasActivity": {
+      "name": "hasActivity",
+      "iri": "#hasActivity",
+      "domains": [
+        "ActivityExecution"
+      ],
+      "ranges": [
+        "Activity"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an activity pattern for an activity execution.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasActivityExecution": {
+      "name": "hasActivityExecution",
+      "iri": "#hasActivityExecution",
+      "domains": [
+        "Participation"
+      ],
+      "ranges": [
+        "ActivityExecution"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {
+        "IndividualActivityExecution": {
+          "min": 1,
+          "max": 1
+        },
+        "TwoPersonsActivityExecution": {
+          "min": 2,
+          "max": 2
+        },
+        "GroupActivityExecution": {
+          "min": 3,
+          "max": null
+        }
+      },
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define in which activity execution a participant takes part within a specific participation.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasApperance": {
+      "name": "hasApperance",
+      "iri": "#hasApperance",
+      "domains": [
+        "ParticipantState"
+      ],
+      "ranges": [
+        "Apperance"
+      ],
+      "inverse_of": null,
+      "is_functional": false,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an apperance of a particpant in a specific time period.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasArrangement": {
+      "name": "hasArrangement",
+      "iri": "#hasArrangement",
+      "domains": [
+        "ActivityExecution"
+      ],
+      "ranges": [
+        "Arrangement"
+      ],
+      "inverse_of": null,
+      "is_functional": false,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an arrangement of participants within a specific activity execution.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasChannel": {
+      "name": "hasChannel",
+      "iri": "#hasChannel",
+      "domains": [
+        "RegisteredChannel"
+      ],
+      "ranges": [
+        "Channel"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a channel registered on a specific registered channel of registered data.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasLifeActivity": {
+      "name": "hasLifeActivity",
+      "iri": "#hasLifeActivity",
+      "domains": [
+        "ObservableInformation"
+      ],
+      "ranges": [
+        "LifeActivity"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an observed life activity for a specific observable information.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasMeasure": {
+      "name": "hasMeasure",
+      "iri": "#hasMeasure",
+      "domains": [
+        "TimeSeries"
+      ],
+      "ranges": [
+        "Measure"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a measure for a specific time series.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasMeasureName": {
+      "name": "hasMeasureName",
+      "iri": "#hasMeasureName",
+      "domains": [
+        "Measure"
+      ],
+      "ranges": [
+        "MeasureName"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a measure name for a specific measure.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasModality": {
+      "name": "hasModality",
+      "iri": "#hasModality",
+      "domains": [
+        "ObservableInformation"
+      ],
+      "ranges": [
+        "Modality"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an observed modality for a specific observable information.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasObservableInformation": {
+      "name": "hasObservableInformation",
+      "iri": "#hasObservableInformation",
+      "domains": [
+        "TimeSeries"
+      ],
+      "ranges": [
+        "ObservableInformation"
+      ],
+      "inverse_of": null,
+      "is_functional": false,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define an observable information used to generate a specific time series.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasParticipant": {
+      "name": "hasParticipant",
+      "iri": "#hasParticipant",
+      "domains": [
+        "ParticipantState"
+      ],
+      "ranges": [
+        "Participant"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to relate a participant state with a specific participant.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasParticipantState": {
+      "name": "hasParticipantState",
+      "iri": "#hasParticipantState",
+      "domains": [
+        "Participation"
+      ],
+      "ranges": [
+        "ParticipantState"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define in what state a participant is in a specific participation.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasParticipation": {
+      "name": "hasParticipation",
+      "iri": "#hasParticipation",
+      "domains": [
+        "Recording"
+      ],
+      "ranges": [
+        "Participation"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define which participation is recorded within a specific recording.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasPersonality": {
+      "name": "hasPersonality",
+      "iri": "#hasPersonality",
+      "domains": [
+        "ParticipantState"
+      ],
+      "ranges": [
+        "Personality"
+      ],
+      "inverse_of": null,
+      "is_functional": false,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a personality of a participant within a specific period of time.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasRecording": {
+      "name": "hasRecording",
+      "iri": "#hasRecording",
+      "domains": [
+        "ObservableInformation"
+      ],
+      "ranges": [
+        "Recording"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a recording for a specific observable information.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasRegisteredChannel": {
+      "name": "hasRegisteredChannel",
+      "iri": "#hasRegisteredChannel",
+      "domains": [
+        "Recording"
+      ],
+      "ranges": [
+        "RegisteredChannel"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a registered channel for a specific recording.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasRegisteredData": {
+      "name": "hasRegisteredData",
+      "iri": "#hasRegisteredData",
+      "domains": [
+        "RegisteredChannel"
+      ],
+      "ranges": [
+        "RegisteredData"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define registered data recorded on a specific registered channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasScenario": {
+      "name": "hasScenario",
+      "iri": "#hasScenario",
+      "domains": [
+        "Experiment"
+      ],
+      "ranges": [
+        "ActivityExecution"
+      ],
+      "inverse_of": "isScenarioOf",
+      "is_functional": false,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define scenarios of an experiment. A scenario is understood as a list of activity executions. The first activity execution within a scenario points at a consequent activity execution with the nextActivityExecution role.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "hasSex": {
+      "name": "hasSex",
+      "iri": "#hasSex",
+      "domains": [
+        "Participant"
+      ],
+      "ranges": [
+        "Sex"
+      ],
+      "inverse_of": null,
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a sex of a participant.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "isNextOfActivityExecution": {
+      "name": "isNextOfActivityExecution",
+      "iri": "#isNextOfActivityExecution",
+      "domains": [],
+      "ranges": [],
+      "inverse_of": "nextActivityExecution",
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An inverse of the object property nextActivityExuction.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "isScenarioOf": {
+      "name": "isScenarioOf",
+      "iri": "#isScenarioOf",
+      "domains": [],
+      "ranges": [],
+      "inverse_of": "hasScenario",
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An inverse of the object property hasScenario.",
+            "lang": null,
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "nextActivityExecution": {
+      "name": "nextActivityExecution",
+      "iri": "#nextActivityExecution",
+      "domains": [
+        "ActivityExecution"
+      ],
+      "ranges": [
+        "ActivityExecution"
+      ],
+      "inverse_of": "isNextOfActivityExecution",
+      "is_functional": true,
+      "forward_cardinality_by_domain": {},
+      "inverse_cardinality_by_domain": {},
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "An object property allowing to define a sequence of activities in a scenario.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    }
+  },
+  "annotation_properties": {
+    "rdfs:comment": {
+      "name": "rdfs:comment",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#comment",
+      "annotations": {}
+    },
+    "conceptType": {
+      "name": "conceptType",
+      "iri": "#conceptType",
+      "annotations": {}
+    }
+  },
+  "named_individuals": {
+    "channelAudio": {
+      "name": "channelAudio",
+      "iri": "#channelAudio",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Audio channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelBVP": {
+      "name": "channelBVP",
+      "iri": "#channelBVP",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Blood Vlume Pulse (BVP) channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelChestSize": {
+      "name": "channelChestSize",
+      "iri": "#channelChestSize",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Chest size channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelDepthVideo": {
+      "name": "channelDepthVideo",
+      "iri": "#channelDepthVideo",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Depth video channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelECG": {
+      "name": "channelECG",
+      "iri": "#channelECG",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Electrocardiography channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelEDA": {
+      "name": "channelEDA",
+      "iri": "#channelEDA",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Electrodermal activity channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelEEG": {
+      "name": "channelEEG",
+      "iri": "#channelEEG",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Electroencephalography channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelEMG": {
+      "name": "channelEMG",
+      "iri": "#channelEMG",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Electromyography channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelRGBVideo": {
+      "name": "channelRGBVideo",
+      "iri": "#channelRGBVideo",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "RGB video channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "channelTemperature": {
+      "name": "channelTemperature",
+      "iri": "#channelTemperature",
+      "asserted_types": [
+        "Channel"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Temperature channel.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityBrainActivity": {
+      "name": "lifeActivityBrainActivity",
+      "iri": "#lifeActivityBrainActivity",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Brain activity.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityHeartActivity": {
+      "name": "lifeActivityHeartActivity",
+      "iri": "#lifeActivityHeartActivity",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Heart activity.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityMovement": {
+      "name": "lifeActivityMovement",
+      "iri": "#lifeActivityMovement",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Movement.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityMusclesActivity": {
+      "name": "lifeActivityMusclesActivity",
+      "iri": "#lifeActivityMusclesActivity",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Muscle activity.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityPerspiration": {
+      "name": "lifeActivityPerspiration",
+      "iri": "#lifeActivityPerspiration",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Perspiration.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityRespiration": {
+      "name": "lifeActivityRespiration",
+      "iri": "#lifeActivityRespiration",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Respiration.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivitySound": {
+      "name": "lifeActivitySound",
+      "iri": "#lifeActivitySound",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Sound.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "lifeActivityThermalRegulation": {
+      "name": "lifeActivityThermalRegulation",
+      "iri": "#lifeActivityThermalRegulation",
+      "asserted_types": [
+        "LifeActivity"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Thermal regulation.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityBodyPosture": {
+      "name": "modalityBodyPosture",
+      "iri": "#modalityBodyPosture",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Body posture.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityEyeGaze": {
+      "name": "modalityEyeGaze",
+      "iri": "#modalityEyeGaze",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Eye gaze.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityFacialExpressions": {
+      "name": "modalityFacialExpressions",
+      "iri": "#modalityFacialExpressions",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Facial expressions.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityGestures": {
+      "name": "modalityGestures",
+      "iri": "#modalityGestures",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Gestures.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityHRV": {
+      "name": "modalityHRV",
+      "iri": "#modalityHRV",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Heart rate variability.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityHeadMovement": {
+      "name": "modalityHeadMovement",
+      "iri": "#modalityHeadMovement",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Head movement.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityHeartRate": {
+      "name": "modalityHeartRate",
+      "iri": "#modalityHeartRate",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Heart rate.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityMotion": {
+      "name": "modalityMotion",
+      "iri": "#modalityMotion",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Motion (different from motion identified by other individuals).",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityMuscleTension": {
+      "name": "modalityMuscleTension",
+      "iri": "#modalityMuscleTension",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Muscle tension.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityNeuralActivity": {
+      "name": "modalityNeuralActivity",
+      "iri": "#modalityNeuralActivity",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Neural activity.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityPeripheralTemperature": {
+      "name": "modalityPeripheralTemperature",
+      "iri": "#modalityPeripheralTemperature",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Peripheral temperature.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityProsodyOfSpeech": {
+      "name": "modalityProsodyOfSpeech",
+      "iri": "#modalityProsodyOfSpeech",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Prosody of speech.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityRESPIntensity": {
+      "name": "modalityRESPIntensity",
+      "iri": "#modalityRESPIntensity",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Rspiratory rate.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalitySkinConductance": {
+      "name": "modalitySkinConductance",
+      "iri": "#modalitySkinConductance",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Skin conductance.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "modalityVocalization": {
+      "name": "modalityVocalization",
+      "iri": "#modalityVocalization",
+      "asserted_types": [
+        "Modality"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Vocalization.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "sexFemale": {
+      "name": "sexFemale",
+      "iri": "#sexFemale",
+      "asserted_types": [
+        "Sex"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Female.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    },
+    "sexMale": {
+      "name": "sexMale",
+      "iri": "#sexMale",
+      "asserted_types": [
+        "Sex"
+      ],
+      "annotations": {
+        "rdfs:comment": [
+          {
+            "value": "Male.",
+            "lang": "en",
+            "datatype": null,
+            "value_type": "literal"
+          }
+        ]
+      }
+    }
+  },
+  "axioms": {
+    "subclass_axioms": [
+      {
+        "sub_class": "ConstantLengthEpochTimeSeries",
+        "super_class": "EpochTimeSeries"
+      },
+      {
+        "sub_class": "ConstantLengthEpochTimeSeries",
+        "super_class": "RegularlySpacedTimeSeries"
+      },
+      {
+        "sub_class": "EmotionalStateMeasure",
+        "super_class": "Measure"
+      },
+      {
+        "sub_class": "EmotionalStateMeasureName",
+        "super_class": "MeasureName"
+      },
+      {
+        "sub_class": "EpochTimeSeries",
+        "super_class": "TimeSeries"
+      },
+      {
+        "sub_class": "GroupActivity",
+        "super_class": "Activity"
+      },
+      {
+        "sub_class": "GroupActivityExecution",
+        "super_class": "ActivityExecution"
+      },
+      {
+        "sub_class": "IndividualActivity",
+        "super_class": "Activity"
+      },
+      {
+        "sub_class": "IndividualActivityExecution",
+        "super_class": "ActivityExecution"
+      },
+      {
+        "sub_class": "IrregularlySpacedTimeSeries",
+        "super_class": "TimeSeries"
+      },
+      {
+        "sub_class": "IrregularlySpacedTimestampTimeSeries",
+        "super_class": "IrregularlySpacedTimeSeries"
+      },
+      {
+        "sub_class": "IrregularlySpacedTimestampTimeSeries",
+        "super_class": "TimestampTimeSeries"
+      },
+      {
+        "sub_class": "PersonalGroupArrangement",
+        "super_class": "Arrangement"
+      },
+      {
+        "sub_class": "PersonalTwoPersonsArrangement",
+        "super_class": "Arrangement"
+      },
+      {
+        "sub_class": "RegularlySpacedTimeSeries",
+        "super_class": "TimeSeries"
+      },
+      {
+        "sub_class": "RegularlySpacedTimestampTimeSeries",
+        "super_class": "RegularlySpacedTimeSeries"
+      },
+      {
+        "sub_class": "RegularlySpacedTimestampTimeSeries",
+        "super_class": "TimestampTimeSeries"
+      },
+      {
+        "sub_class": "TimestampTimeSeries",
+        "super_class": "TimeSeries"
+      },
+      {
+        "sub_class": "TwoPersonsActivity",
+        "super_class": "Activity"
+      },
+      {
+        "sub_class": "TwoPersonsActivityExecution",
+        "super_class": "ActivityExecution"
+      },
+      {
+        "sub_class": "VariableLengthEpochTimeSeries",
+        "super_class": "EpochTimeSeries"
+      },
+      {
+        "sub_class": "VariableLengthEpochTimeSeries",
+        "super_class": "IrregularlySpacedTimeSeries"
+      }
+    ],
+    "equivalent_class_axioms": [
+      {
+        "class_name": "Activity",
+        "expression_type": "object_union_of",
+        "operands": [
+          "GroupActivity",
+          "IndividualActivity",
+          "TwoPersonsActivity"
+        ]
+      },
+      {
+        "class_name": "Arrangement",
+        "expression_type": "object_union_of",
+        "operands": [
+          "PersonalGroupArrangement",
+          "PersonalTwoPersonsArrangement"
+        ]
+      }
+    ],
+    "disjoint_class_axioms": [
+      {
+        "class_names": [
+          "Activity",
+          "ActivityExecution",
+          "Apperance",
+          "Arrangement",
+          "Channel",
+          "Experiment",
+          "LifeActivity",
+          "Measure",
+          "MeasureName",
+          "Modality",
+          "ObservableInformation",
+          "Participant",
+          "ParticipantState",
+          "Participation",
+          "Personality",
+          "Recording",
+          "RegisteredChannel",
+          "RegisteredData",
+          "Sex",
+          "TimeSeries"
+        ]
+      },
+      {
+        "class_names": [
+          "EpochTimeSeries",
+          "TimestampTimeSeries"
+        ]
+      },
+      {
+        "class_names": [
+          "GroupActivity",
+          "IndividualActivity",
+          "TwoPersonsActivity"
+        ]
+      },
+      {
+        "class_names": [
+          "IrregularlySpacedTimeSeries",
+          "RegularlySpacedTimeSeries"
+        ]
+      },
+      {
+        "class_names": [
+          "PersonalGroupArrangement",
+          "PersonalTwoPersonsArrangement"
+        ]
+      }
+    ],
+    "restriction_axioms": [
+      {
+        "subject_class": "ActivityExecution",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasActivity",
+        "inverse": false,
+        "filler": "Activity",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Experiment",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasScenario",
+        "inverse": false,
+        "filler": "ActivityExecution",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Experiment",
+        "restriction_type": "data_some_values_from",
+        "property_name": "name",
+        "inverse": false,
+        "filler": null,
+        "cardinality": null,
+        "value_datatype": "xsd:string"
+      },
+      {
+        "subject_class": "GroupActivityExecution",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasActivity",
+        "inverse": false,
+        "filler": "GroupActivity",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "GroupActivityExecution",
+        "restriction_type": "object_min_cardinality",
+        "property_name": "hasActivityExecution",
+        "inverse": true,
+        "filler": null,
+        "cardinality": 3,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "IndividualActivityExecution",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasActivity",
+        "inverse": false,
+        "filler": "IndividualActivity",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "IndividualActivityExecution",
+        "restriction_type": "object_exact_cardinality",
+        "property_name": "hasActivityExecution",
+        "inverse": true,
+        "filler": null,
+        "cardinality": 1,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Measure",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasMeasureName",
+        "inverse": false,
+        "filler": "MeasureName",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "ObservableInformation",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasRecording",
+        "inverse": false,
+        "filler": "Recording",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Participant",
+        "restriction_type": "data_some_values_from",
+        "property_name": "name",
+        "inverse": false,
+        "filler": null,
+        "cardinality": null,
+        "value_datatype": "xsd:string"
+      },
+      {
+        "subject_class": "ParticipantState",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasParticipant",
+        "inverse": false,
+        "filler": "Participant",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Participation",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasActivityExecution",
+        "inverse": false,
+        "filler": "ActivityExecution",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Participation",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasParticipantState",
+        "inverse": false,
+        "filler": "ParticipantState",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "PersonalGroupArrangement",
+        "restriction_type": "object_all_values_from",
+        "property_name": "hasArrangement",
+        "inverse": true,
+        "filler": "GroupActivityExecution",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "PersonalTwoPersonsArrangement",
+        "restriction_type": "object_all_values_from",
+        "property_name": "hasArrangement",
+        "inverse": true,
+        "filler": "TwoPersonsActivityExecution",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "Recording",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasParticipation",
+        "inverse": false,
+        "filler": "Participation",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "RegisteredChannel",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasRegisteredData",
+        "inverse": false,
+        "filler": "RegisteredData",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "RegisteredData",
+        "restriction_type": "data_some_values_from",
+        "property_name": "registeredDataSource",
+        "inverse": false,
+        "filler": null,
+        "cardinality": null,
+        "value_datatype": "xsd:string"
+      },
+      {
+        "subject_class": "TimeSeries",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasMeasure",
+        "inverse": false,
+        "filler": "Measure",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "TimeSeries",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasObservableInformation",
+        "inverse": false,
+        "filler": "ObservableInformation",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "TimeSeries",
+        "restriction_type": "data_some_values_from",
+        "property_name": "timeSeriesSource",
+        "inverse": false,
+        "filler": null,
+        "cardinality": null,
+        "value_datatype": "xsd:string"
+      },
+      {
+        "subject_class": "TwoPersonsActivityExecution",
+        "restriction_type": "object_some_values_from",
+        "property_name": "hasActivity",
+        "inverse": false,
+        "filler": "TwoPersonsActivity",
+        "cardinality": null,
+        "value_datatype": null
+      },
+      {
+        "subject_class": "TwoPersonsActivityExecution",
+        "restriction_type": "object_exact_cardinality",
+        "property_name": "hasActivityExecution",
+        "inverse": true,
+        "filler": null,
+        "cardinality": 2,
+        "value_datatype": null
+      }
+    ]
+  },
+  "notes": [
+    "Pure ontology-oriented blueprint extracted from OWL.",
+    "No Mongo realization hints or derived implementation statuses are included.",
+    "Ontology header information and annotation literal metadata (lang/datatype) are preserved when available.",
+    "Subclass / equivalent / disjoint axioms are parsed directly from OWL XML.",
+    "Named individuals store asserted types directly; no separate class_assertion_axioms section is used.",
+    "RDF/XML schema extraction is merged with parser model output so schema-only and schema+individual files are both supported."
+  ]
+}

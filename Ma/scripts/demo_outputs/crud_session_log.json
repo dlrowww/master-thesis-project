@@ -1,0 +1,26 @@
+[
+  {
+    "action": "read",
+    "result": {
+      "ok": true,
+      "mode": "one",
+      "query": {
+        "iri": "#partP09"
+      },
+      "result": {
+        "_id": "69e8a8abd63233d12e648bfa",
+        "name": "partP09",
+        "_ontology_type": "Participation",
+        "metadata": {
+          "createdAt": "2026-04-22 10:53:27.576000",
+          "createdBy": "create_mongodb_data_layer_with_import_placeholders",
+          "updatedAt": "2026-04-22 10:53:27.576000",
+          "notes": "Imported from ontology named_individuals: partP09"
+        },
+        "iri": "#partP09",
+        "has_activity_execution_id": "69e8a8aad63233d12e648bdd",
+        "has_participant_state_id": "69e8a8aad63233d12e648bde"
+      }
+    }
+  }
+]
